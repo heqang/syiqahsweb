@@ -1,0 +1,129 @@
+body {
+  background-color: #1a1a1a;
+  color: #f8e3e3;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background-color: #660000;
+  color: #f8e3e3;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #A05252;
+}
+
+ul li::marker {
+  color: #7B1E1E;
+}
+
+img {
+  border: 5px solid #800020;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(139, 0, 0, 0.4); /* crimsony glow */
+}
+
+footer {
+  background-color: #7B1E1E;
+  color: #f8e3e3;
+  text-align: center;
+  padding: 1rem;
+}
+.button-group {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: #800020;
+  color: #f8e3e3;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #a05252;
+  box-shadow: 0 0 15px #8B0000;
+}
+.navbar {
+  background-color: #660000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  color: #f8e3e3;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #f8e3e3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffb6c1;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #f8e3e3;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #660000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
